@@ -1,0 +1,35 @@
+// Exercicio soma
+fun soma(a: Int, b: Int) =
+        a + b
+
+// Exercicio soma
+fun multiplica(a: Int, b: Int, constante: Int = 0) = (a*b) + constante
+
+// Exercicio verificação
+fun verificarSoma(a: Int, b: Int): String {
+    val valor = soma(a, b)
+    if(valor > 5) return "Passou" else return "Reprovado"
+}
+
+//Exercicio When
+fun verificarFaixa(x: Int) {
+    when(x) {
+        in 0..3 -> print("Valor ruim")
+        in 4..7 -> print("Valor normal")
+        in 8..10 -> print("Valor otimo")
+        else -> print("Valor não encontrado")
+    }
+}
+
+//Exercicio com For
+fun apresentarValoresList() {
+    var lista = ArrayList<Int>()
+    lista.add(1)
+    lista.add(2)
+    lista.add(3)
+    lista.add(4)
+
+    for(i in lista) {
+        print(i)
+    }
+}
